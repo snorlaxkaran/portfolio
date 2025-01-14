@@ -39,7 +39,7 @@ export default function Home() {
             <div className="text-left space-y-3 pt-6">
               <div className="w-full flex items-center justify-between">
                 <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white">
-                  Hi, I'm Karan
+                  Hi, I&apos;m Karan
                 </h1>
                 <div className="flex items-center gap-2">
                   <div
