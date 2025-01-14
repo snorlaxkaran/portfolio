@@ -63,7 +63,7 @@ export default function Home() {
                 <a
                   data-state="closed"
                   className="dark:text-white font-semibold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500 underline z-40"
-                  href="https://slugy.in/saas"
+                  href="https://slugy"
                 >
                   Slugy
                 </a>{" "}
