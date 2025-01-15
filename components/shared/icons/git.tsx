@@ -6,7 +6,7 @@ const Github = () => {
       className="flex aspect-square cursor-pointer items-center justify-center rounded-full bg-black/10 dark:bg-white/10 p-3"
       style={{ width: "40px" }}
     >
-      <a href="https://github.com/sandip-dev07">
+      <a href="https://github.com/snorlaxkaran">
         <svg viewBox="0 0 438.549 438.549" className="size-full">
           <path
             fill="currentColor"

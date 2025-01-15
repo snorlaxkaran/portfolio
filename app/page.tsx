@@ -9,6 +9,8 @@ import { Meteors } from "@/components/ui/meteors";
 import Image from "next/image";
 
 export default function Home() {
+  const currentHour = new Date().getHours();
+
   return (
     <MaxWidthWrapper>
       <main className="mx-auto border overflow-hidden pb-28">
