@@ -6,7 +6,7 @@ const Twitter = () => {
       className="flex aspect-square cursor-pointer items-center justify-center rounded-full bg-black/10 dark:bg-white/10 p-3"
       style={{ width: "40px" }}
     >
-      <a href="https://x.com/karanweb17">
+      <a href="https://x.com/karanweb1">
         <svg viewBox="0 0 24 24" className="size-full">
           <path
             fill="currentColor"
