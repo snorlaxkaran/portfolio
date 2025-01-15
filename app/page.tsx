@@ -5,6 +5,7 @@ import Toggle from "@/components/shared/icons/toggle";
 import Twitter from "@/components/shared/icons/twitter";
 import MaxWidthWrapper from "@/components/shared/maxWidthWrapper";
 import Skillset from "@/components/shared/skillset";
+import { Meteors } from "@/components/ui/meteors";
 import Image from "next/image";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <div className="overflow-hidden">
           <div className="w-full px-4">
             <div className="relative">
+              <Meteors />
               <div className="flex items-center pt-[100px]">
                 <div className="relative border cursor-pointer rounded-xl overflow-hidden z-10 w-20 h-20">
                   <Image
