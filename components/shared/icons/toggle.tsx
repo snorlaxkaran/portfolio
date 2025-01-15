@@ -1,15 +1,21 @@
 "use client";
 
 import * as React from "react";
-
 import { useTheme } from "next-themes";
 
 const Toggle = () => {
-  const { theme, setTheme } = useTheme(); // Destructure `theme` to know the current theme
+  const { theme, setTheme, resolvedTheme } = useTheme(); // Use `resolvedTheme` for a more reliable current theme value
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light"); // Toggle between "light" and "dark"
+    setTheme(resolvedTheme === "light" ? "dark" : "light");
   };
+
+  if (!mounted) return null; // Avoid rendering until the component is mounted
 
   return (
     <div
@@ -20,7 +26,7 @@ const Toggle = () => {
         className="size-full rounded-full flex items-center justify-center p-3"
         onClick={toggleTheme}
       >
-        {theme === "dark" ? (
+        {resolvedTheme === "dark" ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -28,9 +34,9 @@ const Toggle = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="lucide lucide-sun"
           >
             <circle cx="12" cy="12" r="4"></circle>
@@ -51,9 +57,9 @@ const Toggle = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="lucide lucide-moon"
           >
             <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
