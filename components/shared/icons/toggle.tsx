@@ -4,7 +4,7 @@ import * as React from "react";
 import { useTheme } from "next-themes";
 
 const Toggle = () => {
-  const { theme, setTheme, resolvedTheme } = useTheme(); // Use `resolvedTheme` for a more reliable current theme value
+  const { setTheme, resolvedTheme } = useTheme(); // Use `resolvedTheme` for a more reliable current theme value
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
